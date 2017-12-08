@@ -1,0 +1,3 @@
+patch:
+    punctuator/half_shape:
+        "/": ["/", "／", "÷"]

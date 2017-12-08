@@ -1,0 +1,6 @@
+2017/10/07-12:59:40.026030 7f645cfbc700 Log #1172: 0 ops saved to Table #1173 OK
+2017/10/07-12:59:40.026090 7f645cfbc700 Archiving /home/yjc/.config/ibus/rime/luna_pinyin.userdb/001172.log: OK
+2017/10/07-12:59:40.029563 7f645cfbc700 Table #1169: 15704 entries OK
+2017/10/07-12:59:40.029619 7f645cfbc700 Table #1171: 2 entries OK
+2017/10/07-12:59:40.029763 7f645cfbc700 Archiving /home/yjc/.config/ibus/rime/luna_pinyin.userdb/MANIFEST-001170: OK
+2017/10/07-12:59:40.031830 7f645cfbc700 **** Repaired leveldb /home/yjc/.config/ibus/rime/luna_pinyin.userdb; recovered 2 files; 513627 bytes. Some data may have been lost. ****

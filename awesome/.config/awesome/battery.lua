@@ -1,0 +1,1 @@
+/home/yjc/git/awesome-batteryInfo/battery.lua
