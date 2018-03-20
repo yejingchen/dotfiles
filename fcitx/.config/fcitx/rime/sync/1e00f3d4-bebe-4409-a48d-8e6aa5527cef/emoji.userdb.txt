@@ -1,7 +1,0 @@
-# Rime user dictionary
-#@/db_name	emoji.userdb
-#@/db_type	userdb
-#@/rime_version	1.2.9
-#@/tick	1
-#@/user_id	1e00f3d4-bebe-4409-a48d-8e6aa5527cef
-smile,happy;biao'qing 	😊	c=1 d=1 t=1
