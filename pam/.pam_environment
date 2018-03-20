@@ -11,3 +11,5 @@ GTK_IM_MODULE DEFAULT=fcitx
 QT_IM_MODULE DEFAULT=fcitx
 XMODIFIERS DEFAULT="@im=fcitx"
 ECORE_IMF_MODULE=xim
+
+RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
