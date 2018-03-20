@@ -32,6 +32,7 @@ English (US):us:English (Carpalx, intl., with AltGr dead keys):carpalx-altgr-int
 English (US):us:English (Carpalx, full optimization):carpalx-full:en
 English (US):us:English (Carpalx, full optimization, intl., with dead keys):carpalx-full-intl:en
 English (US):us:English (Carpalx, full optimization, intl., with AltGr dead keys):carpalx-full-altgr-intl:en
+English (US):us:Sicilian (US keyboard):scn:en
 Afghani:af:
 Afghani:af:Pashto:ps:ps
 Afghani:af:Uzbek (Afghanistan):uz:uz
@@ -45,8 +46,12 @@ Arabic:ara:Arabic (digits):digits:ar
 Arabic:ara:Arabic (QWERTY):qwerty:ar
 Arabic:ara:Arabic (qwerty/digits):qwerty_digits:ar
 Arabic:ara:Arabic (Buckwalter):buckwalter:ar
+Arabic:ara:Arabic (OLPC):olpc:ar
 Arabic:ara:Arabic (Macintosh):mac:ar
 Arabic:ara:Arabic (Sun Type 6/7):sun_type6:ar
+Arabic:ara:Arabic (with extensions for Arabic-written other languages and European digits preferred):basic_ext:ar
+Arabic:ara:Arabic (with extensions for Arabic-written other languages and Arabic digits preferred):basic_ext_digits:ar
+Arabic:ara:Ugaritic instead of Arabic:uga:ar
 Albanian:al:sq
 Albanian:al:Albanian (Plisi):plisi:sq
 Armenian:am:hy
@@ -327,6 +332,8 @@ Italian:it:Italian (Macintosh):mac:it
 Italian:it:Italian (US, with Italian letters):us:it
 Italian:it:Georgian (Italy):geo:ka
 Italian:it:Italian (IBM 142):ibm:it
+Italian:it:Italian (intl., with dead keys):intl:it
+Italian:it:Sicilian:scn:it
 Italian:it:Italian (Sun Type 6/7):sun_type6:it
 Italian:it:Friulian (Italy):fur:fur
 Italian:it:Italian Ladin:lld:
@@ -414,6 +421,7 @@ Polish:pl:Polish (programmer Dvorak):dvp:pl
 Polish:pl:Polish (intl., with dead keys):intl:pl
 Polish:pl:Polish (Colemak):colemak:pl
 Polish:pl:Polish (Sun Type 6/7):sun_type6:pl
+Polish:pl:Polish (Glagolica):glagolica:pl
 Portuguese:pt:pt
 Portuguese:pt:Portuguese (no dead keys):nodeadkeys:pt
 Portuguese:pt:Portuguese (with Sun dead keys):sundeadkeys:pt
@@ -625,3 +633,4 @@ APL:apl:APL Keyboard Symbols: IBM APL2:apl2:en
 APL:apl:APL Keyboard Symbols: Manugistics APL*PLUS II:aplplusII:en
 APL:apl:APL Keyboard Symbols: APLX Unified APL Layout:aplx:en
 EurKEY (US based layout with european letters):eu:ca
+International Phonetic Alphabet:trans:
