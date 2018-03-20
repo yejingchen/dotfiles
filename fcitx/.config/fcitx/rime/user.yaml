@@ -1,11 +1,12 @@
 var:
+  last_build_time: 1521550584
   option:
     simplification: true
   previously_selected_schema: double_pinyin_flypy
   schema_access_time:
-    double_pinyin_flypy: 1505153261
-    emoji: 1502008601
+    double_pinyin_flypy: 1521550608
+    emoji: 1521549868
     hello: 1505152221
-    luna_pinyin: 1502009362
+    luna_pinyin: 1521550591
     luna_pinyin_simp: 1483603540
     numbers: 1505153070
