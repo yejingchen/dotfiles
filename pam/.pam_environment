@@ -1,8 +1,8 @@
 DOT_PAM_ENVIRONMENT=1
-MOZ_USE_XINPUT2=1
+#MOZ_USE_XINPUT2=1 # cause non-focused scrolling unusable under KDE
 VISUAL=vim
 EDITOR=vim
-QT_QPA_PLATFORMTHEME=qgnomeplatform
+#QT_QPA_PLATFORMTHEME=qgnomeplatform
 
 XIM_PROGRAM DEFAULT="fcitx"
 XIM DEFAULT="fcitx"
