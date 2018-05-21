@@ -1,14 +1,6 @@
 # Indicate this file is sourced
 export DOT_XPROFILE=1
 
-# vala-panle-appmenu
-#if [[ $GTK_MODULES ]]; then
-#	export GTK_MODULES="$GTK_MODULES:unity-gtk-module"
-#else
-#	export GTK_MODULES="unity-gtk-module"
-#fi
-#[[ -z "$UBUNTU_MENUPROXY" ]] && export UBUNTU_MENUPROXY=1
-
 # Set CapsLock as Ctrl
 #setxkbmap -option ctrl:nocaps
 

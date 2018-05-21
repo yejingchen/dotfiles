@@ -13,3 +13,5 @@ XMODIFIERS DEFAULT="@im=fcitx"
 ECORE_IMF_MODULE=xim
 
 RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+
+FZF_DEFAULT_COMMAND="fd --type f"

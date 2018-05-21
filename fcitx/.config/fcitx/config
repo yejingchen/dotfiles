@@ -69,7 +69,7 @@ VKSwitchKey=
 #SecondThirdCandWordKey=
 # 保存配置及输入历史
 #SaveAllKey=CTRL_ALT_S
-# Switch Embedded Preedit
+# 切换嵌入预编辑字符串
 #SwitchPreedit=CTRL_ALT_P
 # 上一个候选词
 #PrevWord=SHIFT_TAB
