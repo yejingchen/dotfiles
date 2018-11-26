@@ -1,2 +1,4 @@
 patch:
     translator/preedit_format: null
+    punctuator/half_shape:
+        "/" : "/"

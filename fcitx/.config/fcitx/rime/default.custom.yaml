@@ -1,5 +1,4 @@
 patch:
   schema_list:
     - schema: luna_pinyin          # 朙月拼音
-    - schema: emoji                # emoji 表情
     - schema: double_pinyin_flypy  # 小鶴雙拼
