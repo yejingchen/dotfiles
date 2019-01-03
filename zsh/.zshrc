@@ -7,7 +7,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme robbyrussell
 antigen apply
 
-alias ls=exa
+alias ls='exa --time-style iso'
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
