@@ -12,7 +12,7 @@ QT_IM_MODULE DEFAULT=fcitx
 XMODIFIERS DEFAULT="@im=fcitx"
 ECORE_IMF_MODULE=xim
 
-SKIM_DEFAULT_COMMAND DEFAULT="fd --type f"
+FZF_DEFAULT_COMMAND DEFAULT="fd --type f"
 RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 
 # alacritty

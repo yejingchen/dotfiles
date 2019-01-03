@@ -1,3 +1,4 @@
+export PATH="$HOME/.local/bin:$PATH"
 # start antigen
 source /usr/share/zsh/share/antigen.zsh
 antigen use oh-my-zsh
@@ -8,5 +9,5 @@ antigen apply
 
 alias ls=exa
 
-source /usr/share/skim/completion.zsh
-source /usr/share/skim/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
