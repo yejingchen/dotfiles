@@ -1,1 +1,6 @@
 profile_*
+cached_layout
+clipboard/
+dbus/
+log/
+pinyin/
