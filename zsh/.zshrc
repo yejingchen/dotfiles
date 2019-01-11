@@ -1,7 +1,9 @@
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export FZF_DEFAULT_COMMAND="fd"
 
 export PATH="$HOME/.cargo/bin:/Applications/MacVim.app/Contents/bin:/usr/local/bin:$PATH"
-export PATH="$(yarn global bin):$PATH"
+export PATH="$(yarn global bin 2>/dev/null):$PATH"
 
 # start antigen
 source "$(brew --prefix)/share/antigen/antigen.zsh"
