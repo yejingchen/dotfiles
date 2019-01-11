@@ -4,7 +4,6 @@ export FZF_DEFAULT_COMMAND="fd"
 
 export PATH="$HOME/.cargo/bin:/Applications/MacVim.app/Contents/bin:/usr/local/bin:$PATH"
 export PATH="$(yarn global bin 2>/dev/null):$PATH"
-
 # start antigen
 source "$(brew --prefix)/share/antigen/antigen.zsh"
 antigen use oh-my-zsh

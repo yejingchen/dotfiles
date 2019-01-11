@@ -1,3 +1,8 @@
 patch:
     punctuator/half_shape:
         "/": ["/", "／", "÷"]
+__patch:
+# Rx: emoji:customize:schema=luna_pinyin {
+  - patch/+:
+      __include: emoji_suggestion:/patch
+# }
