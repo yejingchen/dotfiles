@@ -7,6 +7,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
 alias ls='exa --time-style iso'
+alias open='xdg-open'
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
