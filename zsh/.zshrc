@@ -7,8 +7,10 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 export FZF_DEFAULT_COMMAND="fd"
 
-export PATH="$HOME/.yarn/bin:$HOME/.cargo/bin:$HOME/.local/bin/:\
-/Applications/MacVim.app/Contents/bin:/usr/local/bin:/usr/local/sbin/:$PATH"
+export PATH="/usr/local/opt/thrift@0.9/bin:\
+$HOME/.yarn/bin:$HOME/.cargo/bin:$HOME/.local/bin/:\
+/Applications/MacVim.app/Contents/bin:\
+/usr/local/bin:/usr/local/sbin/:$PATH"
 
 # start antigen
 source "$(brew --prefix)/share/antigen/antigen.zsh"
@@ -24,3 +26,5 @@ export NVS_HOME="$HOME/.nvs"
 [ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"
 
 setopt HIST_IGNORE_SPACE
+
+alias file'file -h'
