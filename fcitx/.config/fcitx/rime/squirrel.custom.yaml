@@ -1,3 +1,5 @@
 patch:
-    style/color_scheme: lost_temple
-    style/font_point: 21
+    style/color_scheme: dust
+    preset_color_schemes/dust/horizontal: false
+    preset_color_schemes/dust/font_point: 18
+    preset_color_schemes/dust/label_font_point: 14
