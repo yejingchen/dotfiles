@@ -1,7 +1,10 @@
 patch:
     translator/preedit_format: null
+    punctuator/import_preset: symbols
     punctuator/half_shape:
-        "/" : "/"
+        '/' : [ '/', ／, ÷ ]
+        '#' : [ '#', ⌘ ]
+    recognizer/patterns/punct: '^/([0-9]|10|[A-Za-z]+)$'
 __patch:
 # Rx: emoji:customize:schema=double_pinyin_flypy {
   - patch/+:
