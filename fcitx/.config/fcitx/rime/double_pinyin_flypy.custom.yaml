@@ -10,3 +10,7 @@ __patch:
   - patch/+:
       __include: emoji_suggestion:/patch
 # }
+# Rx: lotem/rime-octagram-data:customize:schema=double_pinyin_flypy,model=hant {
+  - patch/+:
+      __include: grammar:/hant
+# }
