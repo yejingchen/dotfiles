@@ -1,4 +1,8 @@
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+if [[ -z $SSH_AUTH_SOCK ]]; then
+	# gnome-keyring ssh agent
+	export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+fi
 
 # start antigen
 source /usr/share/zsh/share/antigen.zsh
