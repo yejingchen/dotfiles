@@ -17,3 +17,6 @@ RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 
 # alacritty
 WINIT_HIDPI_FACTOR=1
+
+# GNOME/KDE file dialogs for firefox, etc
+GTK_USE_PORTAL=1
