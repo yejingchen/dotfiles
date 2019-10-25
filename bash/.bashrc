@@ -23,14 +23,14 @@ export PATH=${PATH}:${HOME}/utils
 #fi
 
 # enable git-subrepo
-source ~/git/git-subrepo/.rc
+#source ~/git/git-subrepo/.rc
 
-shopt -s checkwinsize
+#shopt -s checkwinsize
 
-alias cnpm="npm --registry=https://registry.npm.taobao.org \
---cache=$HOME/.cache/npm/cnpm \
---disturl=https://npm.taobao.org/dist \
---userconfig=$HOME/.cnpmrc"
+#alias cnpm="npm --registry=https://registry.npm.taobao.org \
+#--cache=$HOME/.cache/npm/cnpm \
+#--disturl=https://npm.taobao.org/dist \
+#--userconfig=$HOME/.cnpmrc"
 alias sudo='sudo '
 
 myproxy() {
