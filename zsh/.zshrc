@@ -12,7 +12,6 @@ export PATH="/Users/jye/Library/Python/3.7/bin:\
 $HOME/.yarn/bin:\
 $HOME/.cargo/bin:\
 $HOME/.local/bin:\
-/Applications/MacVim.app/Contents/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\
 $PATH"
