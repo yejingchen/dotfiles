@@ -20,3 +20,6 @@ WINIT_HIDPI_FACTOR=1
 
 # GNOME/KDE file dialogs for firefox, etc
 GTK_USE_PORTAL=1
+
+# RIME using GLOG will print debug logs for Arch's glog not built with NDEBUG
+GLOG_minloglevel=3
