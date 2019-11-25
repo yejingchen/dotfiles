@@ -1,2 +1,3 @@
 --theme=my-monokai-extended
 --style=plain
+--paging=never
