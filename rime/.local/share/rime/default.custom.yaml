@@ -2,3 +2,4 @@ patch:
   schema_list:
     - schema: luna_pinyin          # 朙月拼音
     - schema: double_pinyin_flypy  # 小鶴雙拼
+    - schema: luna_pinyin_fluency  # 朙月拼音语句流
