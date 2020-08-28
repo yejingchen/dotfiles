@@ -1,8 +1,10 @@
-# Indicate this file is sourced
+# vim: ft=sh
+
+if [ "${DOT_XPROFILE+x}" ]; then
+    return
+fi
+
 export DOT_XPROFILE=1
 
-# Set CapsLock as Ctrl
-#setxkbmap -option ctrl:nocaps
-
 # Enable natural scrolling of the touchpad
-xinput --set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Natural Scrolling Enabled' 1
+#xinput --set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Natural Scrolling Enabled' 1
