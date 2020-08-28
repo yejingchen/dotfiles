@@ -46,3 +46,17 @@ alias gst='git status'
 
 # pyenv
 (( $+commands[pyenv] )) && eval "$(pyenv init -)"
+
+# python venv prompt for grml theme
+# src: http://bewatermyfriend.org/p/2013/003/
+function virtual_env_prompt () {
+    REPLY="${VIRTUAL_ENV+(${VIRTUAL_ENV:t}) }"
+}
+grml_theme_add_token virtual-env -f virtual_env_prompt '%F{magenta}' '%f'
+
+# KDE Craft prompt for grml theme
+function kde_craft_env_prompt() {
+    REPLY="${craftRoot+CRAFT: }"
+}
+grml_theme_add_token kdecraft -f kde_craft_env_prompt
+zstyle ':prompt:grml:left:setup' items rc kdecraft virtual-env change-root user at host path vcs percent
