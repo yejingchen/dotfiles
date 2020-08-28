@@ -1,25 +1,40 @@
 DOT_PAM_ENVIRONMENT=1
-#MOZ_USE_XINPUT2=1 # cause non-focused scrolling unusable under KDE
-VISUAL=vim
-EDITOR=vim
+
 #QT_QPA_PLATFORMTHEME=qgnomeplatform
 
-XIM_PROGRAM DEFAULT="fcitx"
-XIM DEFAULT="fcitx"
-XIM_ARGS DEFAULT="-d"
-GTK_IM_MODULE DEFAULT=fcitx
-QT_IM_MODULE DEFAULT=fcitx
-XMODIFIERS DEFAULT="@im=fcitx"
-ECORE_IMF_MODULE=xim
+#XIM_PROGRAM DEFAULT="fcitx"
+#XIM DEFAULT="fcitx"
+#XIM_ARGS DEFAULT="-d"
 
+#MOZ_USE_XINPUT2=1 # cause non-focused scrolling unusable under KDE
+
+VISUAL=vim
+EDITOR=vim
+
+# input methods
+XMODIFIERS="@im=fcitx"
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+ECORE_IMF_MODULE=xim
 FZF_DEFAULT_COMMAND DEFAULT="fd"
-RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+
+#RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
 
 # alacritty
-WINIT_HIDPI_FACTOR=1
+# WINIT_HIDPI_FACTOR=1
+
+# for firefox va-api
+MOZ_X11_EGL=1
 
 # GNOME/KDE file dialogs for firefox, etc
 GTK_USE_PORTAL=1
 
 # RIME using GLOG will print debug logs for Arch's glog not built with NDEBUG
 GLOG_minloglevel=3
+
+# intel gvt-g graphics card virtualization
+GVT_DOM=0000:00
+GVT_PCI=0000:00:02.0
+GVT_UUID=e90b09fb-8ecd-4c43-9d4f-1bf197d11852
+GVT_TYPE=i915-GVTg_V5_2
