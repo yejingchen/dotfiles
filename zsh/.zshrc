@@ -13,6 +13,7 @@ antigen apply
 alias ls='exa --time-style iso'
 alias l='exa -lgH'
 alias open='xdg-open'
+alias syu='sudo pacman -Syu'
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
