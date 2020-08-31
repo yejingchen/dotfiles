@@ -22,7 +22,7 @@ $PATH"
 
 # start antigen
 source "/usr/local/share/antigen/antigen.zsh"
-#antigen bundle git
+antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
@@ -38,11 +38,6 @@ function zsh_stats() {
 alias file='file -h'
 alias ls='exa --time-style iso'
 alias l='ls -lgH'
-
-# git aliases
-alias glol="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"
-alias glola="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all"
-alias gst='git status'
 
 # pyenv
 (( $+commands[pyenv] )) && eval "$(pyenv init -)"
