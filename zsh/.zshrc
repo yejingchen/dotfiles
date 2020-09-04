@@ -44,7 +44,15 @@ alias ls='exa --time-style iso'
 alias l='ls -lgH'
 
 # pyenv
-(( $+commands[pyenv] )) && eval "$(pyenv init -)"
+#(( $+commands[pyenv] )) && eval "$(pyenv init -)"
+#
+# lazyload pyenv
+export PATH="$HOME/.pyenv/shims:$PATH" # shims even without pyenv
+pyenv() {
+    unfunction pyenv
+    eval "$(command pyenv init -)"
+    pyenv "$@"
+}
 
 # python venv prompt for grml theme
 # src: http://bewatermyfriend.org/p/2013/003/
