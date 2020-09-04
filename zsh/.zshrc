@@ -1,3 +1,6 @@
+# uncomment to profile zsh startup time using `zprof` command
+#zmodload zsh/zprof
+
 source $HOME/grml/zshrc
 
 setopt HIST_IGNORE_SPACE
@@ -24,6 +27,7 @@ $PATH"
 source "/usr/local/share/antigen/antigen.zsh"
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle Tarrasch/zsh-autoenv
 antigen apply
 
 source "/usr/local/opt/fzf/shell/completion.zsh"
