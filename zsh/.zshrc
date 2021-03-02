@@ -36,8 +36,13 @@ function virtual_env_prompt () {
 grml_theme_add_token virtual-env -f virtual_env_prompt '%F{magenta}' '%f'
 
 # KDE Craft prompt for grml theme
-function kde_craft_env_prompt() {
-    REPLY="${craftRoot+CRAFT: }"
-}
-grml_theme_add_token kdecraft -f kde_craft_env_prompt
-zstyle ':prompt:grml:left:setup' items rc kdecraft virtual-env change-root user at host path vcs percent
+#function kde_craft_env_prompt() {
+#    REPLY="${craftRoot+CRAFT: }"
+#}
+#grml_theme_add_token kdecraft -f kde_craft_env_prompt
+zstyle ':prompt:grml:left:setup' items rc virtual-env change-root user at host path vcs percent
+
+# yellow username if in ssh
+if [[ ${SSH_CONNECTION+x} ]]; then
+	zstyle ':prompt:grml:*:items:user' pre '%B%F{yellow}'
+fi
