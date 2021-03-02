@@ -1,6 +1,9 @@
 export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
-if [[ -z $SSH_AUTH_SOCK ]]; then
-	# gnome-keyring ssh agent
+
+if [[ "$DESKTOP_SESSION" ]]; then
+	eval $(gnome-keyring-daemon --start)
+    export SSH_AUTH_SOCK
+elif [[ -z ${SSH_AUTH_SOCK+x} ]] && [[ -S /run/user/1000/keyring/ssh ]] ; then
 	export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 fi
 
