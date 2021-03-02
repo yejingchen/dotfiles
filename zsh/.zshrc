@@ -13,10 +13,11 @@ antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
-alias ls='exa --time-style iso'
-alias l='exa -lgH'
+#alias sudo='sudo '
 alias open='xdg-open'
 alias syu='sudo pacman -Syu'
+alias tar=bsdtar
+alias sshp="ssh -o ProxyCommand='nc -X 5 -x 127.0.0.1:1080 %h %p'"
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
