@@ -1,26 +1,24 @@
 export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 
-if [[ "$DESKTOP_SESSION" ]]; then
+if [[ -z ${SSH_AUTH_SOCK+x} ]] && [[ -S /run/user/1000/keyring/ssh ]] ; then
+	export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+elif [[ $SSH_AUTH_SOCK ]]; then
+	;
+elif [[ "$DESKTOP_SESSION" ]]; then
 	eval $(gnome-keyring-daemon --start)
     export SSH_AUTH_SOCK
-elif [[ -z ${SSH_AUTH_SOCK+x} ]] && [[ -S /run/user/1000/keyring/ssh ]] ; then
-	export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 fi
 
-# start antigen
-source /usr/share/zsh/share/antigen.zsh
-antigen bundle git
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen apply
-
-#alias sudo='sudo '
 alias open='xdg-open'
 alias syu='sudo pacman -Syu'
 alias tar=bsdtar
-alias sshp="ssh -o ProxyCommand='nc -X 5 -x 127.0.0.1:1080 %h %p'"
+alias sshp="ssh -o ProxyCommand='nc -X 5 -x 127.0.0.1:1088 %h %p'"
+alias ip='ip -c=auto'
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
+
+[[ -r ~/.dircolors ]] && source <(dircolors ~/.dircolors)
 
 # zsh_stats from oh-my-zsh
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/functions.zsh
@@ -46,3 +44,10 @@ zstyle ':prompt:grml:left:setup' items rc virtual-env change-root user at host p
 if [[ ${SSH_CONNECTION+x} ]]; then
 	zstyle ':prompt:grml:*:items:user' pre '%B%F{yellow}'
 fi
+
+# start antigen
+source /usr/share/zsh/share/antigen.zsh
+antigen bundle git
+#antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle z-shell/F-Sy-H@main
+antigen apply
