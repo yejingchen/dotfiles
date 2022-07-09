@@ -46,7 +46,8 @@ if [[ ${SSH_CONNECTION+x} ]]; then
 fi
 
 # start antigen
-source /usr/share/zsh/share/antigen.zsh
+#source /usr/share/zsh/share/antigen.zsh
+source ~/.zsh/antigen.zsh
 antigen bundle git
 #antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle z-shell/F-Sy-H@main
