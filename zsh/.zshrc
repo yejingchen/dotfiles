@@ -1,7 +1,7 @@
 export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 
-if [[ -z ${SSH_AUTH_SOCK+x} ]] && [[ -S "/run/user/$(id -n)/keyring/ssh" ]] ; then
-	export "SSH_AUTH_SOCK=/run/user/$(id -n)/keyring/ssh"
+if [[ -z ${SSH_AUTH_SOCK+x} ]] && [[ -S "/run/user/$(id -u)/keyring/ssh" ]] ; then
+	export "SSH_AUTH_SOCK=/run/user/$(id -u)/keyring/ssh"
 elif [[ $SSH_AUTH_SOCK ]]; then
 	;
 elif [[ "$DESKTOP_SESSION" ]]; then
