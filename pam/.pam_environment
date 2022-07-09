@@ -48,5 +48,5 @@ FZF_DEFAULT_COMMAND=fd
 
 # firefox video hardware acceleration by nvidia-vaapi-driver
 #LIBVA_DRIVER_NAME=nvidia
-MOZ_DISABLE_RDD_SANDBOX=1
+#MOZ_DISABLE_RDD_SANDBOX=1
 #EGL_PLATFORM=wayland
