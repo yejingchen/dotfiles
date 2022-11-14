@@ -1,4 +1,4 @@
-export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
 
 if [[ -z ${SSH_AUTH_SOCK+x} ]] && [[ -S "/run/user/$(id -u)/keyring/ssh" ]] ; then
 	export "SSH_AUTH_SOCK=/run/user/$(id -u)/keyring/ssh"
@@ -52,3 +52,5 @@ antigen bundle git
 #antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle z-shell/F-Sy-H@main
 antigen apply
+
+export FZF_DEFAULT_COMMAND=fd
