@@ -10,10 +10,12 @@ elif [[ "$DESKTOP_SESSION" ]]; then
 fi
 
 alias open='xdg-open'
-alias syu='sudo pacman -Syu'
 alias tar=bsdtar
 alias sshp="ssh -o ProxyCommand='nc -X 5 -x 127.0.0.1:1088 %h %p'"
-alias ip='ip -c=auto'
+
+syu() {
+	tmux new "sudo pacman -Syu ; echo pacman done; sleep infinity"
+}
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
