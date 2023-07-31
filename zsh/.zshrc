@@ -1,14 +1,6 @@
 export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
 export GROFF_NO_SGR=1
-
-if [[ -z ${SSH_AUTH_SOCK+x} ]] && [[ -S "/run/user/$(id -u)/keyring/ssh" ]] ; then
-	export "SSH_AUTH_SOCK=/run/user/$(id -u)/keyring/ssh"
-elif [[ $SSH_AUTH_SOCK ]]; then
-	;
-elif [[ "$DESKTOP_SESSION" ]]; then
-	eval $(gnome-keyring-daemon --start)
-    export SSH_AUTH_SOCK
-fi
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
 
 alias open='xdg-open'
 alias tar=bsdtar
