@@ -2,6 +2,9 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
 #export GROFF_NO_SGR=1
 export MANROFFOPT="-c"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
+export LESS=FRX
+
+fpath=(~/.zfunc $fpath)
 
 alias open='xdg-open'
 alias tar=bsdtar
@@ -40,7 +43,7 @@ fi
 # start antigen
 #source /usr/share/zsh/share/antigen.zsh
 source ~/.zsh/antigen.zsh
-antigen bundle git
+#antigen bundle git
 #antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle z-shell/F-Sy-H@main
 antigen apply
