@@ -1,5 +1,6 @@
 export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
-export GROFF_NO_SGR=1
+#export GROFF_NO_SGR=1
+export MANROFFOPT="-c"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
 
 alias open='xdg-open'
