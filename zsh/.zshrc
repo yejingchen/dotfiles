@@ -7,10 +7,6 @@ alias open='xdg-open'
 alias tar=bsdtar
 alias sshp="ssh -o ProxyCommand='nc -X 5 -x 127.0.0.1:1088 %h %p'"
 
-syu() {
-	tmux new "sudo pacman -Syu ; echo '=> pacman done' ; sleep infinity"
-}
-
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
