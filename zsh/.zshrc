@@ -4,6 +4,8 @@ export MANROFFOPT="-c"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
 export LESS=FRX
 
+setopt HIST_IGNORE_SPACE
+
 fpath=(~/.zfunc $fpath)
 
 alias open='xdg-open'
