@@ -11,6 +11,8 @@ fpath=(~/.zfunc $fpath)
 alias open='xdg-open'
 alias tar=bsdtar
 alias sshp="ssh -o ProxyCommand='nc -X 5 -x 127.0.0.1:1088 %h %p'"
+alias syu='run0 pacman -Syu'
+alias rzh='run0 --setenv=LANG=zh_CN.UTF-8'
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
