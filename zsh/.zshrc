@@ -20,6 +20,10 @@ source /usr/share/fzf/key-bindings.zsh
 
 [[ -r ~/.dircolors ]] && source <(dircolors ~/.dircolors)
 
+flexget() {
+	uvx --from='flexget[transmission]' -- flexget "$@"
+}
+
 # zsh_stats from oh-my-zsh
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/functions.zsh
 function zsh_stats() {
